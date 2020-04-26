@@ -36,6 +36,9 @@ class ReliableUDPSocket:
 	seq_num_recv = 0
 
 	cwnd_size = 10
+
+	#length_of_sent_object
+	length=0
 	
 	def __init__(self, src_IP, src_port, dest_IP, dest_port):
 		# Set user given source IP address and source port
@@ -65,7 +68,10 @@ class ReliableUDPSocket:
 		while(len(self.send_buff)!=0):
 			pass
 		toc=time.time()
-		print(toc-tic)
+		total_time = toc-tic
+		throughput= (self.length*8)/total_time
+		print("throughput = "+str(throughput)+ " bits/sec")
+
 
 	def send(self, text_msg):
 		'''
@@ -110,6 +116,7 @@ class ReliableUDPSocket:
 					# Create string to be sent over UDP packet
 					# with necessary information.
 					send_data = str(packet.type) + "\n" + str(packet.seq_num) + "\n" + str(packet.data) + "\n"
+					self.length+=len(send_data)
 					send_data = send_data.encode('utf-8')
 
 					self.sock.sendto(send_data, self.host_addr)
@@ -138,6 +145,7 @@ class ReliableUDPSocket:
 				# Create string to be sent over UDP packet with neccessary
 				# information.
 				send_data = str(packet.type) + "\n" + str(packet.seq_num) + "\n"
+
 				send_data = send_data.encode('utf-8')
 
 				self.sock.sendto(send_data, self.host_addr)
