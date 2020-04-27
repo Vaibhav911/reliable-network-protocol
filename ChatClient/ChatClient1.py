@@ -13,12 +13,15 @@ import time
 sys.path.append("../Protocol")
 from ReliableUDPSocket import ReliableUDPSocket
 
-
+flag = False
 #send message function to keep on sending messages 
 def sendMessage(skt):
 	global signal
 	while signal:
-		inputString = input(str("\nOutgoing : "))
+		flag = False
+		inputString = input(str("\n(You) : "))
+		flag = True
+		print("\n=============================================")
 		if inputString == "quit" or inputString == "q":
 			signal = False
 		else:
@@ -30,7 +33,10 @@ def rcvMessage(skt):
 	while signal:
 		msg = skt.recv()
 		if (msg != -1):
-			print("\nIncoming :",msg)
+			print("\n(Friend) :",msg)
+			print("\n==========================================")
+			if flag == False:
+				print("\n(You):")
 		time.sleep(0.5)
 
 if __name__ == '__main__':
@@ -47,8 +53,11 @@ if __name__ == '__main__':
 	global signal 
 	signal = True
 
-	sendingThread = threading.Thread(target=sendMessage, args=(skt,))
-	recievingThread = threading.Thread(target=rcvMessage, args=(skt,))
+	print("\n================================================================")
+	print("\n ........CHAT CONNECTION ESTABLISHED......  CLIENT READY !!!")
+	print("\n================================================================")
+	sendingThread = threading.Thread(target=sendMessage, args=(skt,),daemon=True)
+	recievingThread = threading.Thread(target=rcvMessage, args=(skt,), daemon=True)
 
 	sendingThread.start()
 	recievingThread.start()
