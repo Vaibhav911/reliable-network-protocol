@@ -70,7 +70,7 @@ class ReliableUDPSocket:
 		toc=time.time()
 		total_time = toc-tic
 		throughput= (self.length*8)/total_time
-		print("throughput = "+str(throughput)+ " bits/sec")
+		print(throughput)
 		self.close()
 
 
@@ -213,5 +213,4 @@ s.send_at_a_time()
 
 	
 	
-
 
