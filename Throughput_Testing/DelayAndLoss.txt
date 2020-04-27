@@ -1,0 +1,216 @@
+50
+5
+throughput = 4889.441500629557 bits/sec
+50
+10
+throughput = 4397.866605589534 bits/sec
+50
+20
+throughput = 5908.53833415104 bits/sec
+50
+30
+throughput = 4760.797748726982 bits/sec
+50
+50
+throughput = 4432.535150975961 bits/sec
+50
+60
+throughput = 5035.500415086146 bits/sec
+50
+70
+throughput = 4444.773121893745 bits/sec
+50
+90
+throughput = 4363.034244277238 bits/sec
+100
+5
+throughput = 5726.048145086546 bits/sec
+100
+10
+throughput = 5770.465668927142 bits/sec
+100
+20
+throughput = 5671.389403402338 bits/sec
+100
+30
+throughput = 6116.729721562038 bits/sec
+100
+50
+throughput = 5904.487279330381 bits/sec
+100
+60
+throughput = 5908.982217959886 bits/sec
+100
+70
+throughput = 5784.145328855435 bits/sec
+100
+90
+throughput = 5929.232906150563 bits/sec
+200
+5
+throughput = 5769.089430960994 bits/sec
+200
+10
+throughput = 4832.426842358476 bits/sec
+200
+20
+throughput = 5595.428918317635 bits/sec
+200
+30
+throughput = 5727.604832354677 bits/sec
+200
+50
+throughput = 5765.16638976548 bits/sec
+200
+60
+throughput = 5989.118498617197 bits/sec
+200
+70
+throughput = 5689.860285899903 bits/sec
+200
+90
+throughput = 4570.595216270917 bits/sec
+500
+5
+throughput = 5792.47970813287 bits/sec
+500
+10
+throughput = 5528.25642630945 bits/sec
+500
+20
+throughput = 4913.213420912754 bits/sec
+500
+30
+throughput = 5804.619193350284 bits/sec
+500
+50
+throughput = 5864.950666964931 bits/sec
+500
+60
+throughput = 4341.7755005094705 bits/sec
+500
+70
+throughput = 5948.069900166549 bits/sec
+500
+90
+throughput = 4385.741415589896 bits/sec
+800
+5
+throughput = 5812.174862658537 bits/sec
+800
+10
+throughput = 5688.454097962648 bits/sec
+800
+20
+throughput = 5851.821782647123 bits/sec
+800
+30
+throughput = 5848.097759278139 bits/sec
+800
+50
+throughput = 5747.63362569405 bits/sec
+800
+60
+throughput = 5765.824404221402 bits/sec
+800
+70
+throughput = 5927.8144919117685 bits/sec
+800
+90
+throughput = 6205.068565777559 bits/sec
+1000
+5
+throughput = 4426.633265041445 bits/sec
+1000
+10
+throughput = 5670.561978089447 bits/sec
+1000
+20
+throughput = 4893.025078183239 bits/sec
+1000
+30
+throughput = 4409.515174055838 bits/sec
+1000
+50
+throughput = 5731.8523617074225 bits/sec
+1000
+60
+throughput = 5841.56132178384 bits/sec
+1000
+70
+throughput = 5842.241557746603 bits/sec
+1000
+90
+throughput = 4692.027929972786 bits/sec
+1200
+5
+throughput = 5924.3673858540205 bits/sec
+1200
+10
+throughput = 5900.754968421712 bits/sec
+1200
+20
+throughput = 5807.343646221108 bits/sec
+1200
+30
+throughput = 6017.571214270135 bits/sec
+1200
+50
+throughput = 5946.963477740552 bits/sec
+1200
+60
+throughput = 4876.548040994265 bits/sec
+1200
+70
+throughput = 5709.004326747397 bits/sec
+1200
+90
+throughput = 5840.77677444288 bits/sec
+1500
+5
+throughput = 5830.500136140484 bits/sec
+1500
+10
+throughput = 4455.499210270854 bits/sec
+1500
+20
+throughput = 5822.206209999956 bits/sec
+1500
+30
+throughput = 5686.580850976827 bits/sec
+1500
+50
+throughput = 4492.712865319781 bits/sec
+1500
+60
+throughput = 5841.357002002628 bits/sec
+1500
+70
+throughput = 4454.977864891401 bits/sec
+1500
+90
+throughput = 6093.258105972485 bits/sec
+2000
+5
+throughput = 5962.936169248424 bits/sec
+2000
+10
+throughput = 5690.275461045209 bits/sec
+2000
+20
+throughput = 5788.151043199783 bits/sec
+2000
+30
+throughput = 5823.112788155819 bits/sec
+2000
+50
+throughput = 5746.9905928331555 bits/sec
+2000
+60
+throughput = 5124.16422149952 bits/sec
+2000
+70
+throughput = 4416.682563016168 bits/sec
+2000
+90
+throughput = 5800.315606377593 bits/sec

@@ -35,7 +35,7 @@ class ReliableUDPSocket:
 	seq_num_send = 0
 	seq_num_recv = 0
 
-	cwnd_size = 10
+	cwnd_size = 100
 
 	#length_of_sent_object
 	length=0
@@ -48,7 +48,7 @@ class ReliableUDPSocket:
 
 		# Set destination IP addr and port as given by user.
 		self.host_addr = (dest_IP, dest_port)
-		print("socket created", self.sock)
+		#print("socket created", self.sock)
 
 		# signal attribute is for controlling threads, if false, threads will stop.
 		self.signal = True
@@ -71,6 +71,7 @@ class ReliableUDPSocket:
 		total_time = toc-tic
 		throughput= (self.length*8)/total_time
 		print("throughput = "+str(throughput)+ " bits/sec")
+		self.close()
 
 
 	def send(self, text_msg):
@@ -128,7 +129,7 @@ class ReliableUDPSocket:
 			for ind in sorted(del_list, reverse=True):
 				del self.send_buff[ind]
 
-			time.sleep(1)
+			time.sleep(0.5)
 
 	def send_ACK_thread_util(self):
 		'''
@@ -156,7 +157,7 @@ class ReliableUDPSocket:
 			for ind in sorted(del_list, reverse=True):
 				del self.send_buff_ACK[ind]
 
-			time.sleep(1)
+			time.sleep(0.5)
 
 	def recv_thread_util(self):
 		'''
@@ -168,7 +169,7 @@ class ReliableUDPSocket:
 			data, address = self.sock.recvfrom(4096)
 			# check if it's correct host, maybe later
 			data = data.decode('utf-8')
-			print("data received\n", data)
+			#print("data received\n", data)
 
 			# Converts parameters in string form to a list.
 			data = data.split('\n')
@@ -207,9 +208,8 @@ class ReliableUDPSocket:
 					if (self.send_buff[ind].seq_num == int(data[1])):
 						self.send_buff[ind].ack_rcvd = True
 						break
-socket=ReliableUDPSocket("IP1",5000,"IP2",5001)
-socket.send_at_a_time()
-quit()
+s=ReliableUDPSocket("192.168.43.186", 5000, "192.168.43.186", 5001)
+s.send_at_a_time()
 
 	
 	
