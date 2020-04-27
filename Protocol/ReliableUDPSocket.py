@@ -75,7 +75,7 @@ class ReliableUDPSocket:
 			return -1
 		else:
 			packet = self.recv_buff[0]
-			self.recv_buffer.pop(0)
+			self.recv_buff.pop(0)
 			return packet.data
 
 	def close(self):
@@ -150,7 +150,7 @@ class ReliableUDPSocket:
 			data, address = self.sock.recvfrom(4096)
 			# check if it's correct host, maybe later
 			data = data.decode('utf-8')
-			print("data received\n", data)
+			#print("data received\n", data)
 
 			# Converts parameters in string form to a list.
 			data = data.split('\n')
