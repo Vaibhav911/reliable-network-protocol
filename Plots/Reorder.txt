@@ -1,0 +1,16 @@
+5
+throughput = 5766.386198384972 bits/sec
+10
+throughput = 5867.342357307874 bits/sec
+20
+throughput = 4450.72871229259 bits/sec
+30
+throughput = 6392.1972485522265 bits/sec
+50
+throughput = 5708.290615445364 bits/sec
+60
+throughput = 5964.952166976703 bits/sec
+70
+throughput = 4685.516930196054 bits/sec
+90
+throughput = 5805.31573162205 bits/sec
