@@ -169,7 +169,7 @@ class ReliableUDPSocket:
 			data, address = self.sock.recvfrom(4096)
 			# check if it's correct host, maybe later
 			data = data.decode('utf-8')
-			#print("data received\n", data)
+			# print("data received\n", data)
 
 			# Converts parameters in string form to a list.
 			data = data.split('\n')
@@ -208,9 +208,6 @@ class ReliableUDPSocket:
 					if (self.send_buff[ind].seq_num == int(data[1])):
 						self.send_buff[ind].ack_rcvd = True
 						break
+
 s=ReliableUDPSocket("192.168.43.186", 5000, "192.168.43.186", 5001)
 s.send_at_a_time()
-
-	
-	
-

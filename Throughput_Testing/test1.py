@@ -207,9 +207,5 @@ class ReliableUDPSocket:
 					if (self.send_buff[ind].seq_num == int(data[1])):
 						self.send_buff[ind].ack_rcvd = True
 						break
+
 s=ReliableUDPSocket("192.168.43.186",5001,"192.168.43.186",5000)
-
-	
-	
-
-
