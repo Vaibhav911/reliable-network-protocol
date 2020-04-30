@@ -1,0 +1,19 @@
+50
+throughput = 5706.166576307625 bits/sec
+100
+throughput = 5706.612626955925 bits/sec
+200
+throughput = 5597.57153238065 bits/sec
+500
+throughput = 6204.119149086311 bits/sec
+800
+throughput = 5863.938878601979 bits/sec
+1000
+throughput = 5845.565700485794 bits/sec
+1200
+throughput = 4607.373411107057 bits/sec
+1500
+throughput = 6089.291521486643 bits/sec
+2000
+throughput = 6222.206833851874 bits/sec
+
